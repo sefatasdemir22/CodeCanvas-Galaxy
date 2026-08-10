@@ -1,133 +1,86 @@
-# 🌌 CodeCanvas: Generative Galaxy
+# CodeCanvas: Generative Galaxy
 
-**CodeCanvas: Generative Galaxy** — Python ile yazılmış bir generative art projesidir.
-Her çalıştırmada rastgele bir galaksi, yıldız patlaması veya aurora benzeri soyut desen üretir.
-Her tablo benzersizdir ve “koddan sanat” felsefesini yansıtır 🎨
+A Python generative-art project that creates procedural galaxy-inspired images, galleries, and collages from randomized visual parameters.
 
----
+## Overview
 
-## 🚀 Özellikler
+Each run generates a unique abstract composition using combinations of galaxy type, color theme, naming, and rendering parameters. The project includes both command-line workflows and a small desktop studio for generating and reviewing outputs.
 
-* Rastgele galaksi isimleri (örnek: *Silent Orbit*, *Crimson Core*)
-* Farklı galaksi tipleri: spiral, ring, burst
-* Renk modları: Aurora, Solar, Void, Candy
-* Tamamen siyah “uzay” arka plan
-* Şeffaf PNG çıktılar (kolajlarda kusursuz karışım)
-* Otomatik galeri üretimi (`gallery_mode.py`)
-* Kolaj birleştirici (`gallery_collage.py`)
-* GUI destekli kontrol paneli (`studio.py`)
+## Features
 
----
+- procedural galaxy generation
+- multiple visual forms, including spiral, ring, and burst patterns
+- themed color modes such as Aurora, Solar, Void, and Candy
+- randomized galaxy names
+- transparent PNG export
+- batch gallery generation
+- automatic collage creation
+- desktop GUI through `studio.py`
 
-## 🧩 Klasör Yapısı
+## Example Output
 
-```
-CodeCanvas-Galaxy
-│
-├── galaxy_generator.py      # Tek galaksi üretimi
-├── gallery_mode.py          # 5 galaksi birden üretir
-├── gallery_collage.py       # Tüm galaksileri tek kolajda birleştirir
-├── studio.py                # GUI (CodeCanvas Studio)
+<p align="center">
+  <img src="outputs/gallery_collage.png" width="600" alt="Generated galaxy collage">
+</p>
+
+## Tech Stack
+
+- Python
+- procedural image generation
+- desktop GUI tooling
+- PNG image export
+
+## Project Structure
+
+```text
+CodeCanvas-Galaxy/
+├── galaxy_generator.py
+├── gallery_mode.py
+├── gallery_collage.py
+├── studio.py
 ├── outputs/
-│   └── gallery/             # Tüm galaksi çıktıları
-├── requirements.txt         # Bağımlılıklar
+│   └── gallery/
+├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
----
+## Running Locally
 
-## 🪄 Kullanım
-
-### 1️⃣ Gereksinimler
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Tekli galaksi üretimi
+Generate a single artwork:
 
 ```bash
 python galaxy_generator.py
 ```
 
-### 3️⃣ 5 galaksi birden (galeri modu)
+Generate a gallery batch:
 
 ```bash
 python gallery_mode.py
 ```
 
-### 4️⃣ Kolaj oluşturma
+Build a collage from generated images:
 
 ```bash
 python gallery_collage.py
 ```
 
-→ `outputs/gallery_collage.png` dosyasında uzay temalı kolaj oluşturulur.
-
-### 5️⃣ GUI versiyonu (önerilen)
+Launch the desktop studio:
 
 ```bash
 python studio.py
 ```
 
-→ Karanlık arayüzde “Yeni Galaksi Üret”, “Galeri (5) Üret” ve “Kolaj Oluştur” butonlarıyla
-tam bir **generative art stüdyosu** deneyimi yaşanır.
+## Purpose
 
----
+This project is a creative coding experiment focused on procedural generation, image composition, and building small tools around generated visual output. It serves as a different kind of software project alongside my robotics, mobile, web, and machine-learning work.
 
-## ✨ Örnek Çıktılar
+## License
 
-* Dream Pulse — Solar Ring
-* Fractal Pulse — Candy Spiral
-* Luminous Drift — Solar Ring
-* Quantum Core — Void Burst
-
-<p align="center">
-  <img src="outputs/gallery_collage.png" width="500">
-</p>
-
----
-
-## 💡 Geliştirme Fikirleri (v5+)
-
-* Arka plan yıldız tozu / nebula efekti
-* Renk temalarına manuel seçim
-* Galaksi tipini kullanıcı seçimi
-* Galeriye sesli/animasyonlu versiyonlar
-* SVG / Video export
-* Online galeri veya NFT entegrasyonu
-
----
-
-## 📜 Lisans
-
-Bu proje [MIT License](LICENSE) kapsamında paylaşılmıştır.
-Kodun açık, eğitici ve özgürce yeniden kullanılabilir olmasını destekler.
-
-```
-MIT License
-
-Copyright (c) 2025 Sefa Taşdemir
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
----
-
-> ✨ *Part of CodeCanvas: Sefa’s Generative Art Studio*
+Released under the [MIT License](LICENSE).
